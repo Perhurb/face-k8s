@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人脸识别应用</title>
+</head>
+<body>
+    <h1>识别LFW数据集中的人, VNF版本</h1>
+    <form action="" enctype="multipart/form-data" method="POST">
+        <input type="file" name="lfw_file" style="margin-top: 15px;"/>
+        <input type="submit" value="上传" class="button-new" style="margin-top:5px;"/>
+    </form>
+    <p>识别结果为：{{recognition_result}}</p>
+    <p>总耗时为：{{time_consume}} s</p>
+    <img src="static/images/{{filename_lfw}}" width="200" height="200" alt="None"/>
+
+</body>
+</html>
